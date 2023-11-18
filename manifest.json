@@ -1,0 +1,86 @@
+{
+    "display_information": {
+        "name": "mk-bot-23.11",
+        "description": "mk bot for 23.11",
+        "background_color": "#000000"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "mk-bot-23.11",
+            "always_online": true
+        },
+        "slash_commands": [
+            {
+                "command": "/mk",
+                "description": "does stuff for mk",
+                "should_escape": false
+            }
+        ]
+    },
+    "oauth_config": {
+        "scopes": {
+            "user": [
+                "files:read",
+                "files:write"
+            ],
+            "bot": [
+                "app_mentions:read",
+                "channels:history",
+                "chat:write",
+                "chat:write.customize",
+                "emoji:read",
+                "files:read",
+                "files:write",
+                "groups:history",
+                "groups:read",
+                "groups:write",
+                "groups:write.invites",
+                "groups:write.topic",
+                "im:write",
+                "im:write.topic",
+                "im:history",
+                "im:write.invites",
+                "im:read",
+                "mpim:history",
+                "mpim:read",
+                "mpim:write",
+                "mpim:write.invites",
+                "mpim:write.topic",
+                "links:read",
+                "links.embed:write",
+                "links:write",
+                "reactions:read",
+                "reactions:write",
+                "commands"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "user_events": [
+                "file_public",
+                "file_shared",
+                "file_unshared"
+            ],
+            "bot_events": [
+                "app_home_opened",
+                "file_public",
+                "file_shared",
+                "file_unshared",
+                "link_shared",
+                "message.channels",
+                "message.groups",
+                "message.im",
+                "message.mpim",
+                "reaction_added",
+                "reaction_removed"
+            ]
+        },
+        "interactivity": {
+            "is_enabled": true
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": true,
+        "token_rotation_enabled": false
+    }
+}

@@ -1,0 +1,9 @@
+TITLE: Timeline 1
+FCM: NON-DROP FRAME
+
+001  BL       V     C        01:00:00:00 01:00:05:00 01:00:00:00 01:00:05:00  
+* FROM CLIP NAME: Rich
+
+002  AX       V     C        11:55:48:13 11:56:26:02 01:00:05:00 01:00:42:13  
+* FROM CLIP NAME: HyperDeck_0001.mp4
+

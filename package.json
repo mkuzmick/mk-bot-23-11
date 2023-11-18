@@ -1,0 +1,35 @@
+{
+  "name": "mk-bot-23.11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export NODE_ENV=dev&& nodemon app.js",
+    "experimental": "export NODE_ENV=experimental&& nodemon app.js",
+    "aidev": "export NODE_ENV=aidev&& nodemon app.js"
+  },
+  "bin": {
+    "mk-23.11": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuzmick/mk-bot-23.11.git"
+  },
+  "author": "mk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkuzmick/mk-bot-23.11/issues"
+  },
+  "homepage": "https://github.com/mkuzmick/mk-bot-23.11#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.15.0",
+    "airtable": "^0.12.2",
+    "clear": "^0.1.0",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0",
+    "midi": "^2.0.0",
+    "openai": "^4.19.0",
+    "yargs": "^17.7.2"
+  }
+}

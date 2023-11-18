@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.10">
+    <resources>
+        <format height="1080" width="1920" frameDuration="1/24s" name="FFVideoFormat1080p24" id="r0"/>
+        <effect name="Basic Title" uid=".../Titles.localized/Bumper:Opener.localized/Basic Title.localized/Basic Title.moti" id="r1"/>
+        <asset audioChannels="2" start="342425/8s" audioSources="1" duration="378/1s" format="r0" hasVideo="1" name="HyperDeck_0001.mp4" hasAudio="1" id="r2">
+            <media-rep src="file:///Volumes/_work/HyperDeck_0001.mp4" kind="original-media"/>
+        </asset>
+    </resources>
+    <library>
+        <event name="Timeline 1 (Resolve)">
+            <project name="Timeline 1 (Resolve)">
+                <sequence tcFormat="NDF" tcStart="3600/1s" duration="1021/24s" format="r0">
+                    <spine>
+                        <title ref="r1" start="3600/1s" duration="5/1s" enabled="1" offset="3600/1s" name="Rich">
+                            <text roll-up-height="0">
+                                <text-style ref="ts0">mk-test-20230419</text-style>
+                            </text>
+                            <text-style-def id="ts0">
+                                <text-style fontColor="1 1 1 1" strokeColor="0 0 0 1" lineSpacing="0" strokeWidth="0" bold="1" italic="0" font="Inter" fontSize="96" alignment="center"/>
+                            </text-style-def>
+                            <adjust-transform scale="1 1" position="0 0" anchor="0 0"/>
+                        </title>
+                        <asset-clip tcFormat="NDF" ref="r2" start="85897/2s" duration="901/24s" enabled="1" offset="3605/1s" format="r0" name="HyperDeck_0001.mp4">
+                            <adjust-transform scale="1 1" position="0 0" anchor="0 0"/>
+                        </asset-clip>
+                    </spine>
+                </sequence>
+            </project>
+        </event>
+    </library>
+</fcpxml>
