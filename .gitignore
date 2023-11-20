@@ -133,4 +133,4 @@ dist
 .DS_Store
 _secret
 _hidden
-
+_output

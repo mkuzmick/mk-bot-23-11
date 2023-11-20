@@ -24,7 +24,7 @@ const app = new App({
 app.message('testing testing', noBotMessages, messageHandler.testing);
 app.message(/.*/, noBotMessages, messageHandler.parseAll);
 
-app.command('/elle', slashHandler.elleSlash);
+app.command('/mk', slashHandler.mkSlash);
 
 app.event('reaction_added', eventHandler.reactionAdded);
 

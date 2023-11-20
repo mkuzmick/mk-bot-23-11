@@ -1,6 +1,5 @@
 const { llog } = require('../../utils/ll-utilities');
-const elleResponseV1 = require('../personae/elle/elle-response-v1');
-const elleResponseV2 = require('../personae/elle/elle-response-v2');
+const mkResponseV1 = require('../personae/mk/mk-response-v1');
 
 const testBots = {
     elle_23_11: "C065C4G6NDC"
@@ -22,7 +21,7 @@ exports.parseAll = async ({ client, message, say }) => {
         let result = await client.conversations.history({channel: message.channel, limit: 10})
         llog.magenta(result)
         // let openAiResult = await elleResponseV1({ text: message.text, messages: result.messages });
-        let openAiResult = await elleResponseV2({ text: message.text, messages: result.messages });
+        let openAiResult = await mkResponseV1({ text: message.text, messages: result.messages });
         llog.magenta(openAiResult)
         let slackResult = await say(openAiResult.choices[0].message.content);
     } else if (message.channel == "C060Z16VA4S") {

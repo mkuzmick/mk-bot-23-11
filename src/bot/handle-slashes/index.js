@@ -8,7 +8,7 @@ const blocks = [
         "type": "header",
         "text": {
             "type": "plain_text",
-            "text": "elle-l-bot",
+            "text": "mk-bot response",
             "emoji": true
         }
     },
@@ -16,7 +16,7 @@ const blocks = [
         "type": "section",
         "text": {
             "type": "mrkdwn",
-            "text": "in progress"
+            "text": "in progress right now. check back later."
         }
     },
     {
@@ -25,7 +25,7 @@ const blocks = [
     
 ]
 
-exports.elleSlash = async ({ command, client, ack, say }) => {
+exports.mkSlash = async ({ command, client, ack, say }) => {
     ack();
     try {
         llog.red(command, null, 4)
