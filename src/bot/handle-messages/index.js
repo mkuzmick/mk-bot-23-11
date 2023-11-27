@@ -1,4 +1,4 @@
-const { llog } = require('../../utils/ll-utilities');
+const llog = require('learninglab-log');
 const mkResponseV1 = require('../personae/mk/mk-response-v1');
 
 const testBots = {

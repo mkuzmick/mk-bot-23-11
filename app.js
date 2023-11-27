@@ -1,6 +1,6 @@
 const { App } = require('@slack/bolt');
 const path = require('path');
-const llog = require('./src/utils/ll-utilities/ll-logs')
+const llog = require('learninglab-log')
 const { noBotMessages } = require('./src/utils/ll-slack-tools/middleware')
 const { messageHandler, eventHandler, actionHandler, slashHandler } = require('./src/bot');  
 
